@@ -1,0 +1,19 @@
+<html>
+    <title> Calculator </title>
+    <form method="POST">
+        <label> Input #1 : </label>
+        <input type="text" name="textbox1" value = {{user_text1 | safe}}> <br>
+        <label> Input #2 : </label>
+        <input type="text" name="textbox2" value = {{user_text2 | safe}}> <br>
+        <input type="submit" name="btn" value="+">
+        <input type="submit" name="btn" value="-">
+        <input type="submit" name="btn" value="*">
+        <input type="submit" name="btn" value="/">
+        <input type="submit" name="btn" value="%">
+        <input type="submit" name="btn" value="^">
+        <label> Result: </label>
+        <label> {{output | safe}}</label> <br>
+        
+        
+    </form>
+</html>
